@@ -1,7 +1,7 @@
-var header = $("h1");
-// console.log(header);
-header.text("hi my name is Rodrigues");
-// .text changes the actual text of an element
+// var header = $("h1");
+// // console.log(header);
+// header.text("hi my name is Rodrigues");
+// // .text changes the actual text of an element
 
 
 
@@ -65,4 +65,12 @@ button3.on("click", replaceText);
 
 function replaceText (){
   document.querySelector("h6").innerHTML = "hey button3 is working finally!!"
+}
+
+var clearButton = document.getElementById("clearSong");
+
+clearButton.addEventListener("click", doSomething)
+
+function doSomething(){
+  document.querySelector("h4").innerHTML = " ";
 }
